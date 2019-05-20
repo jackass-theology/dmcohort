@@ -270,6 +270,22 @@ li {
   background-color: var(--white);
 }
 
+.with-bg-size {
+  background-image: url('https://odis.homeaway.com/odis/listing/19a58545-f914-4d34-81a7-ced829da4e68.f10.jpg');
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+.with-bg-size2 {
+  background-image: url('https://jackasstheology.com/wp-content/uploads/2019/05/hunt_TX.jpg');
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
 /*PROFILES*/
 .profile-container {
   display: flex;
