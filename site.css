@@ -1,40 +1,47 @@
 /* myStyle.css */
 
+:root {
+  --black: #000;
+  --white: #fff;
+  --cadetblue: #5f9ea0;
+  --dimgrey: #696969;
+}
+
 html,
 body {
   margin: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
   width: 100%;
   height: 100%;
 }
 
 h1 {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--white);
+  background-color: var(--black);
   padding: 20px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  border: 0 solid black;
+  border: 0 solid var(--black);
   margin-top: 50px;
 }
 
 h2 {
-  color: #000000;
+  color: var(--black);
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font: 100%;
+  font-size: 100%;
   margin-bottom: 5px;
 }
 
 h3 {
   display: inline-block;
-  color: black;
+  color: var(--black);
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font: 100%;
+  font-size: 100%;
   margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -43,8 +50,8 @@ h3 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #696969;
+  background-color: var(--white);
+  color: var(--dimgrey);
   text-align: left;
   font-weight: 400;
   padding: 5px 20px 10px 20px;
@@ -53,13 +60,13 @@ p {
 }
 
 a {
-  color: #5f9ea0;
+  color: var(--cadetblue);
   text-decoration: none;
 }
 
 ul {
   font-family: 'Open sans', sans-serif;
-  color: #696969;
+  color: var(--dimgrey);
 }
 
 li {
@@ -79,7 +86,7 @@ li {
   padding-top: 0;
   padding-bottom: 10px;
   margin: 0;
-  border: 0 solid #000000;
+  border: 0 solid var(--black);
   font-style: italic;
 }
 
@@ -104,14 +111,14 @@ li {
 
 .topnav {
   overflow: hidden;
-  background-color: #000000;
+  background-color: var(--black);
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
 
 .topnav a {
   float: left;
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -119,13 +126,13 @@ li {
 }
 
 .topnav a:hover {
-  background-color: #5f9ea0;
-  color: #ffffff;
+  background-color: var(--cadetblue);
+  color: var(--white);
 }
 
 .topnav a.active {
-  background-color: #5f9ea0;
-  color: #ffffff;
+  background-color: var(--cadetblue);
+  color: var(--white);
 }
 
 .center {
@@ -194,9 +201,9 @@ li {
 
 .button_1 {
   order: 1;
-  background-color: #5f9ea0;
-  border: solid 0 #696969;
-  color: #000000;
+  background-color: var(--cadetblue);
+  border: solid 0 var(--dimgrey);
+  color: var(--black);
   font-size: 100%;
   font-weight: 600;
   padding: 25px 30px;
@@ -211,14 +218,14 @@ li {
 }
 
 .button_1 a {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .button_2 {
   order: 2;
   background-color: #ff0000;
-  border: solid 0 #696969;
-  color: #ffffff;
+  border: solid 0 var(--dimgrey);
+  color: var(--white);
   font-size: 100%;
   padding: 15px 20px;
   text-align: center;
@@ -230,12 +237,12 @@ li {
 }
 
 .button_2 a {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .button:hover {
-  background-color: #5f9ea0;
-  color: #ffffff;
+  background-color: var(--cadetblue);
+  color: var(--white);
 }
 
 .fullimg {
@@ -251,7 +258,7 @@ li {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  border: 0 solid #0000ff;
+  border: 0 solid var(--black)0ff;
 }
 
 .flex-item {
@@ -260,7 +267,7 @@ li {
   margin-top: 10px;
   padding: 10px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 /*PROFILES*/
