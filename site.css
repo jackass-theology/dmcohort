@@ -131,6 +131,12 @@ li {
   font-size: 17px;
 }
 
+@media (max-width: 768px) {
+  .listnav a {
+    font-size: 12px;
+  }
+}
+
 .listnav a:hover {
   background-color: var(--cadetblue);
   color: var(--white);
