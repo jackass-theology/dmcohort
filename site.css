@@ -130,7 +130,7 @@ li {
 
 .listnav a {
   float: left;
-  display: inline-block;
+  display: block;
   color: var(--white);
   text-align: center;
   padding: 28px 30px;
@@ -142,6 +142,8 @@ li {
   .listnav a {
     font-size: 12px;
     padding: 24px 15px;
+    width: 60px;
+    border: 0px;
   }
 }
 
