@@ -69,7 +69,7 @@ ul {
 }
 
 li {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 #logo {
@@ -108,15 +108,22 @@ li {
   width: 100px;
 }
 
-.topnav {
+.listnav {
   overflow: hidden;
+  list-style-type: none;
   background-color: var(--black);
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  margin: 0;
+  padding: 0;
 }
 
-.topnav a {
+.listnav a {
   float: left;
+  display: inline-block;
   color: var(--white);
   text-align: center;
   padding: 14px 16px;
@@ -124,14 +131,18 @@ li {
   font-size: 17px;
 }
 
-.topnav a:hover {
+.listnav a:hover {
   background-color: var(--cadetblue);
   color: var(--white);
 }
 
-.topnav a.active {
+.listnav a.active {
   background-color: var(--cadetblue);
   color: var(--white);
+}
+
+.top-right-nav  {
+    background-color: var(--red);
 }
 
 .center {
@@ -149,6 +160,29 @@ li {
   overflow: hidden;
 }
 
+/*HERO*/
+
+/*
+.hero-wrapper {
+   position: relative;
+   margin-top: 50px;
+   text-align: center;
+   color: white;
+} */
+
+#logo {
+  margin-top: 80px;
+  margin-bottom: 50px;
+} 
+
+/*
+.darken {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(https://jackasstheology.com/wp-content/uploads/2019/05/cohort_3.jpg);
+} */
 
 /* CONTENT WRAPPER */
 
@@ -204,7 +238,7 @@ li {
 
 .button_1 {
   order: 1;
-  background-color: var(--cadetblue);
+  background-color: var(--red);
   border: solid 0 var(--dimgrey);
   color: var(--black);
   font-weight: 600;
@@ -251,6 +285,29 @@ li {
   Font-size: 0;
   margin: 0;
   width: 100%;
+}
+
+/*VIDEO*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    min-width: 100vw;
 }
 
 /*DATES*/
