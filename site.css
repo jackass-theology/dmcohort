@@ -141,7 +141,7 @@ li {
 @media (max-width: 768px) {
   .listnav a {
     font-size: 12px;
-    padding: 20px 15px;
+    padding: 24px 15px;
   }
 }
 
