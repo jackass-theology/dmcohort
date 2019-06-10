@@ -3,9 +3,11 @@
 :root {
   --black: #000;
   --white: #fff;
-  --red: #f00;
+  --red: #F15A24;
   --cadetblue: #5f9ea0;
   --dimgrey: #696969;
+  --pfont: 'Merriweather';
+  --h1font: 'Rubik', sans-serif;
 }
 
 html,
@@ -19,13 +21,16 @@ body {
 
 h1 {
   color: var(--white);
+  display: inline-block;
+  flex-basis: auto;
   background-color: var(--black);
   padding: 20px;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: var(--h1font);
   font-weight: 700;
   border: 0 solid var(--black);
-  margin-top: 50px;
+  margin-top: 0px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -37,7 +42,7 @@ h1 {
 h2 {
   color: var(--black);
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--pfont);
   margin-bottom: 5px;
 }
 
@@ -45,7 +50,7 @@ h3 {
   display: inline-block;
   color: var(--black);
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--pfont);
   font-weight: 400;
   margin-top: 5px;
   margin-left: auto;
@@ -54,8 +59,7 @@ h3 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--white);
+  font-family: var(--pfont);
   color: var(--dimgrey);
   text-align: left;
   font-weight: 400;
@@ -70,12 +74,14 @@ a {
 }
 
 ul {
-  font-family: 'Open sans', sans-serif;
+  font-family: var(--pfont);
   color: var(--dimgrey);
+  margin-bottom: 0px;
 }
 
 li {
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #logo {
@@ -84,7 +90,7 @@ li {
 
 #logo img {
   margin-top: 100px;
-    width: 60%;
+  width: 30%;
 }
 
 .subtitle {
@@ -94,16 +100,13 @@ li {
   margin: 0;
   border: 0 solid var(--black);
   font-style: italic;
-}
-
-.p-centered {
-  text-align: center;
-}
+  margin-right: 0px;
+} 
 
 @media (max-width: 767px) {
   [id='#logo'] img {
     width: 80%;
-  }
+    }
 }
 
 .EFCAlogo {
@@ -116,24 +119,28 @@ li {
 }
 
 .listnav {
+  background-color: var(--white);
   overflow: hidden;
   list-style-type: none;
-  background-color: var(--black);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--pfont);
+  font-weight: 600;
   font-size: 14px;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  height: 80px;
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 28px 0px;
+  box-sizing: border-box;
 }
 
 .listnav a {
   float: left;
   display: block;
-  color: var(--white);
+  color: var(--black);
   text-align: center;
-  padding: 28px 30px;
+  padding: 28px 10px 10px 10px;
+  margin: 0px 20px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -147,17 +154,24 @@ li {
 }
 
 .listnav a:hover {
-  background-color: var(--cadetblue);
-  color: var(--white);
+  color: var(--black);
+  border-bottom: 4px solid var(--black);
 }
 
 .listnav a.active {
-  background-color: var(--cadetblue);
-  color: var(--white);
+  background-repeat:no-repeat;
+  color: var(--red);
 }
 
-.top-right-nav  {
+.top-right-nav {
     background-color: var(--red);
+    border: 4px solid var(--red)off;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.top-right-nav a {
+    color: whitesmoke;
 }
 
 .center {
@@ -175,29 +189,233 @@ li {
   overflow: hidden;
 }
 
+
+.buffer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--red)off;
+    margin: 0px;
+    padding: 0px;
+}
+
 /*HERO*/
 
-/*
-.hero-wrapper {
-   position: relative;
-   margin-top: 50px;
-   text-align: center;
-   color: white;
-} */
 
 #logo {
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  height: 90vh;
+  background: linear-gradient(
+    rgba(255, 255, 255, .65),
+    rgba(0, 0, 0, 0.45)
+     ),
+      url(images/baptism.jpg)  center no-repeat fixed;  
+    background-size: cover;
+    
 } 
 
-/*
-.darken {
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
-    url(https://jackasstheology.com/wp-content/uploads/2019/05/cohort_3.jpg);
-} */
+#logo img {
+    width: 100%;
+    height: 30%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+
+/* SUBSCRIBE */
+
+#dmcohort-mailchimp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 750px;
+    min-height: 700px;
+    max-height: 2000px;
+    overflow: visible;
+    background: linear-gradient(
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0.6)
+        ),
+        url(images/cohort_1.jpg) center no-repeat var(--black);
+    background-size: cover;
+}
+@media (max-width: 767px) {
+    #dmcohort-mailchimp  {
+    min-height: 900px;
+    overflow: visible;
+    }
+}
+#mc_embed_signup {
+    flex-basis: auto;
+    background: none !important;
+    font-family: var(--pfont);
+    color: var(--white);
+    border: 1px solid var(--red);
+    height: 100%;
+    width: 70vw;
+    max-width: 800px;
+}
+
+.subscribe-form {
+    height: 100%;
+}
+
+.subscribe-form H1 {
+    font-family: var(--pfont);
+    color: var(--white);
+    display: inline-block;
+    font-weight: 300; 
+    line-height: 1em;
+    padding: 40px 20px 40px 20px;
+    margin: 40px 15% 40px 15%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid var(--white);
+}
+.subscribe-form .people {
+    color: var(--white);
+    text-align: cetner; 
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 700px;
+}
+@media (max-width: 767px){
+    .subscribe-form H2 {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    }
+    .subscribe-form .people {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+    margin: 0;
+    }
+}
+
+.field-container {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    margin-bottom: 100px;
+    margin-top: 0px;
+}
+.field-email {
+    order: -3;
+    height: 100px;
+    flex-basis: 100%;
+}
+.field-first {
+    order: -2;
+    width: 275px;
+    height: 100px;
+    flex-basis: auto;
+}
+.field-last {
+    order: -1;
+    width: 280px;
+    height: 100px;
+    flex-basis: auto;
+}
+/*.field-birth {
+    order:-1;
+    height: 33.33% !important;
+    flex-basis: auto !important;
+    margin: auto;
+}*/
+#mc-embedded-subscribe-form .button {
+    order: 99;
+    flex-basis: 100%;
+    color: var(--white);
+    background-color: rgba(90, 158, 160, 0.75);    
+    font-family: 'open sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 0px;
+    border: 2px solid var(--white)off;
+    padding: 15px 40px 15px 40px;
+    width: 300px;
+    text-align: center;
+    margin-top: 30px;
+    height: auto;
+}
+
+#mc-embedded-subscribe-form .button:hover {
+    background-color: rgba(241, 90, 36, 0.65);    
+}
+
+#mc-embedded-subscribe-form .clear {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mc-embed_signup .button {
+}
+@media (max-width: 767px) {
+    .field-first {
+    order: -2;
+    flex-basis: 100% !important;
+    margin: auto;
+    }
+    .field-last {
+    order: -1;
+    flex-basis: 100% !important;
+    margin-left: auto;
+    }
+    #mc-embedded-subscribe-form .button{
+        margin-top: 30px !important;
+    }
+}
+
+.indicates-required{
+    width: 80%;
+    max-width: 600px;
+    margin: 10px auto 20px auto;
+}
+.asterisk{
+    color: var(--red) !important; 
+}
+.mc-field-group {
+    background-color: none !important;
+    padding: 10px;
+    border: 1px solid var(--white)off;
+}
+.mc-field-group label {
+    font-family: 'open sans', sans-serif;
+    background-color: none;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    border-bottom: 0px solid var(--red);
+    margin-bottom: 0px;
+}
+.mc-field-group input {
+    background-color: rgba(255,255,255,0.2) !important;
+    color: white;
+    width: 100%;
+    font-family: 'open sans', sans-serif;
+    font-size: 18px !important;
+    padding: 10px 0px 10px 0px !important;
+    border-radius: 0px !important;
+    border: 2px solid var(--white)off;
+    margin: 0px !important;
+}
+
 
 /* CONTENT WRAPPER */
 
@@ -214,18 +432,27 @@ li {
   margin-bottom: 40px;
 }
 
-.content {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 0 var(--red);
+.wrapper h1 {
+    
 }
-@media (min-width: 768px) {
+
+.content {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  max-width: 500px;
+  border: solid 4px var(--black);
+}
+
+@media (max-width: 768px) {
   .content {
-    width: 70%;
-    min-width: 400px;
+    width: 80%;
+    min-width: 300px;
+    max-width: 600px;
   }
 }
+
 
 /* @media (max-width: 767px) {
     .wrapper {
@@ -332,7 +559,7 @@ li {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  border: 0 solid var(--black)0ff;
+  border: 0px solid var(--black);
 }
 
 .flex-item {
@@ -353,11 +580,33 @@ li {
 }
 
 .with-bg-size2 {
-  background-image: url('https://jackasstheology.com/wp-content/uploads/2019/05/hunt_TX.jpg');
+  background-image: url('images/hunt_TX.jpg');
   width: 100%;
   height: 400px;
   background-position: center;
   background-size: cover;
+  border: 1px solid var(--red);
+
+}
+
+.bghunt {
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row;
+    width:100%;
+    height: 50vh;
+    border: 1px solid var(--red);
+    background: linear-gradient(
+    rgba(255, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)
+     ),
+    url(images/baptism.jpg)off;
+    background: url(baptism.jpg) bottom center no-repeat var(--black);
+}
+
+.bghunt .content {
+    max-height: 300px;
 }
 
 /*PROFILES*/
