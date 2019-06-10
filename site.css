@@ -655,9 +655,7 @@ li {
 
 .bghunt .content {
     flex-basis: 400px;
-    max-height: 300px;
-    margin: 50px;
-    
+    margin: 50px; 
 }
 
 .virtual {
