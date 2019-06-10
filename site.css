@@ -146,14 +146,14 @@ li {
   color: var(--black);
   text-align: center;
   padding: 28px 10px 10px 10px;
-  margin: 0px 20px;
+  margin: 0px 10px;
   text-decoration: none;
   font-size: 17px;
 }
 @media (max-width: 768px) {
   .listnav a {
     font-size: 12px;
-    padding: 24px 15px;
+    padding: 24px 10px;
     border: 0px;
   }
 }
