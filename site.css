@@ -65,7 +65,7 @@ p {
   font-weight: 400;
   padding: 5px 20px 10px 20px;
   line-height: 1.6em;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 a {
@@ -255,7 +255,7 @@ li {
     background: none !important;
     font-family: var(--pfont);
     color: var(--white);
-    border: 1px solid var(--red);
+    border: 1px solid var(--red)off;
     height: 100%;
     width: 70vw;
     max-width: 800px;
@@ -271,21 +271,22 @@ li {
     display: inline-block;
     font-weight: 300; 
     line-height: 1em;
-    padding: 40px 20px 40px 20px;
-    margin: 40px 15% 40px 15%;
+    padding: 30px 20px 30px 20px;
+    margin: 40px 20% 40px 20%;
     box-sizing: border-box;
+    max-width: 600px;
     text-align: center;
     border: 2px solid var(--white);
 }
 .subscribe-form .people {
     color: var(--white);
     text-align: cetner; 
-    padding-left: 10%;
-    padding-right: 10%;
-    margin: auto;
-    margin-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 @media (max-width: 767px){
     .subscribe-form H2 {
@@ -323,15 +324,13 @@ li {
 }
 .field-first {
     order: -2;
-    width: 275px;
     height: 100px;
-    flex-basis: auto;
+    flex-basis: 45%;
 }
 .field-last {
     order: -1;
-    width: 280px;
     height: 100px;
-    flex-basis: auto;
+    flex-basis: 45%;
 }
 /*.field-birth {
     order:-1;
@@ -389,7 +388,7 @@ li {
     margin: 10px auto 20px auto;
 }
 .asterisk{
-    color: var(--red) !important; 
+    color: var(--red)!important; 
 }
 .mc-field-group {
     background-color: none !important;
@@ -415,7 +414,6 @@ li {
     border: 2px solid var(--white)off;
     margin: 0px !important;
 }
-
 
 /* CONTENT WRAPPER */
 
