@@ -636,11 +636,6 @@ li {
     background-size: cover;
 }
 
-.bgmpls .content {
-    max-height: 300px;
-    
-}
-
 .bghunt {
     display:flex;
     align-content: center;
