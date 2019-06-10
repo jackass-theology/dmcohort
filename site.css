@@ -425,6 +425,35 @@ li {
     margin: 0px !important;
 }
 
+/*COHORT OVERVIEW*/
+
+.overview-wrap {
+    display: flex;
+    background: linear-gradient(
+    rgba(255, 255, 255, .6),
+    rgba(255, 255, 255, 1)
+    ), url(images/register.jpg) center center no-repeat fixed var(--white);
+    background-size: cover;
+}
+
+#overview {
+    background: none;
+    box-sizing: border-box;
+    font-family: var(--pfont); 
+    color: var(--black);
+    font-size: 40px;
+    margin: 30px 0px;
+    border: 1px solid var(--red)off;
+    
+}
+
+.overview-wrap li {
+    list-style: none;
+    list-style-image: 
+    url(images/SVG/starRD.svg);
+    line-height: 3.2em;
+}
+
 /* CONTENT WRAPPER */
 .wrapper {
   display: flex;
@@ -657,22 +686,16 @@ li {
   flex-flow: row;
   align-items: flex-start;
   justify-content: center;
-  align-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .profile {
-  order: 1;
-  width: 33%;
+  flex-basis: 400px;
   margin-top: 0;
-  align-self: auto;
-  border: solid0 var(--red);
+  border: solid 1px var(--red);
 }
-@media (min-width: 768px) {
-  .profile {
-    min-width: 300px;
-  }
-}
+
 @media (max-width: 767px) {
   .profile-containter {
     flex-flow: column;
