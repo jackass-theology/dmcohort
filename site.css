@@ -214,7 +214,7 @@ li {
     rgba(255, 255, 255, .65),
     rgba(0, 0, 0, 0.45)
      ),
-      url(images/baptism.jpg)  center no-repeat fixed;  
+      url(http://jackasstheology.com/wp-content/uploads/2019/06/baptism.jpg)  center no-repeat fixed;  
     background-size: cover;
     
 } 
@@ -222,7 +222,7 @@ li {
 #logo img {
     width: 100%;
     height: 30%;
-    margin-top: 20%;
+    margin-top: 200px;
     margin-bottom: 10%;
 }
 
@@ -244,7 +244,7 @@ li {
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.6)
         ),
-        url(images/cohort_1.jpg) center no-repeat var(--black);
+        url(http://jackasstheology.com/wp-content/uploads/2019/06/cohort_1.jpg) center no-repeat var(--black);
     background-size: cover;
 }
 @media (max-width: 767px) {
@@ -276,7 +276,7 @@ li {
     font-weight: 300; 
     line-height: 1em;
     padding: 30px 20px 30px 20px;
-    margin: 40px 20% 40px 20%;
+    margin: 80px 20% 40px 20%;
     box-sizing: border-box;
     max-width: 600px;
     text-align: center;
@@ -341,12 +341,9 @@ li {
     flex-basis: 45%;
 }
 
-/*.field-birth {
-    order:-1;
-    height: 33.33% !important;
-    flex-basis: auto !important;
-    margin: auto;
-}*/
+#mc-embedded-subscribe {
+    flex-basis: 100%;
+}
 
 #mc-embedded-subscribe-form .button {
     order: 99;
@@ -384,7 +381,8 @@ li {
     margin-left: auto;
     }
     #mc-embedded-subscribe-form .button{
-        margin-top: 30px !important;
+        margin-top: 30px;
+        flex-basis: 100%;
     }
 }
 
@@ -432,7 +430,7 @@ li {
     background: linear-gradient(
     rgba(255, 255, 255, .6),
     rgba(255, 255, 255, 1)
-    ), url(images/register.jpg) center center no-repeat fixed var(--white);
+    ), url(http://jackasstheology.com/wp-content/uploads/2019/06/register.jpg) center center no-repeat fixed var(--white);
     background-size: cover;
 }
 
@@ -450,7 +448,7 @@ li {
 .overview-wrap li {
     list-style: none;
     list-style-image: 
-    url(images/SVG/starRD.svg);
+    url(http://jackasstheology.com/wp-content/uploads/2019/06/starRD.png);
     line-height: 3.2em;
 }
 
@@ -607,7 +605,7 @@ li {
 .flex-item {
   flex: 200px;
   list-style: none;
-  list-style-image: url(images/SVG/starRD.svg);
+  list-style-image: url(http://jackasstheology.com/wp-content/uploads/2019/06/starRD.png);
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
@@ -656,7 +654,7 @@ li {
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.2)
      ),
-    url(images/travel.jpg) center center no-repeat var(--black);
+    url(http://jackasstheology.com/wp-content/uploads/2019/06/travel.jpg) center center no-repeat var(--black);
     background-size: cover;
 }
 
@@ -672,7 +670,7 @@ li {
         rgba(255, 255, 255, .9),
         rgba(255, 255, 255, .5)
         ),
-        url(images/laptop.jpg) center center no-repeat;
+        url(http://jackasstheology.com/wp-content/uploads/2019/06/laptop.jpg) center center no-repeat;
     background-size: cover;
     box-sizing: border-box;
     height: 600px;
@@ -693,10 +691,10 @@ li {
 .profile {
   flex-basis: 400px;
   margin-top: 0;
-  border: solid 1px var(--red);
+  border: solid 1px var(--red)off;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .profile-containter {
     flex-flow: column;
     flex-direction: column;
@@ -719,7 +717,9 @@ li {
 }
 
 .profileimg {
+  background-color: none;
   border-radius: 50%;
+  border: 4px solid var(--black);
 }
 
 .testimonials {
