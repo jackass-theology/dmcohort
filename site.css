@@ -346,7 +346,6 @@ li {
 }
 
 #mc-embedded-subscribe-form .button {
-    order: 99;
     flex-basis: 100%;
     color: var(--white);
     background-color: rgba(90, 158, 160, 0.75);    
