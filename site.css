@@ -32,13 +32,11 @@ h1 {
   margin-top: 0px;
   width: 100%;
 }
-
 @media (max-width: 768px) {
   h1 {
     font-size: 20px;
   }
 }
-
 h2 {
   color: var(--black);
   text-align: center;
@@ -109,6 +107,13 @@ li {
     }
 }
 
+.white {
+    color: var(--white);
+}
+.white-border {
+    border: 2px solid var(--white);
+}
+
 .EFCAlogo {
   display: block;
   margin-left: auto;
@@ -144,7 +149,6 @@ li {
   text-decoration: none;
   font-size: 17px;
 }
-
 @media (max-width: 768px) {
   .listnav a {
     font-size: 12px;
@@ -189,7 +193,6 @@ li {
   overflow: hidden;
 }
 
-
 .buffer {
     box-sizing: border-box;
     width: 100%;
@@ -199,9 +202,8 @@ li {
     padding: 0px;
 }
 
+
 /*HERO*/
-
-
 #logo {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -250,6 +252,7 @@ li {
     overflow: visible;
     }
 }
+
 #mc_embed_signup {
     flex-basis: auto;
     background: none !important;
@@ -278,6 +281,7 @@ li {
     text-align: center;
     border: 2px solid var(--white);
 }
+
 .subscribe-form .people {
     color: var(--white);
     text-align: cetner; 
@@ -317,27 +321,32 @@ li {
     margin-bottom: 100px;
     margin-top: 0px;
 }
+
 .field-email {
     order: -3;
     height: 100px;
     flex-basis: 100%;
 }
+
 .field-first {
     order: -2;
     height: 100px;
     flex-basis: 45%;
 }
+
 .field-last {
     order: -1;
     height: 100px;
     flex-basis: 45%;
 }
+
 /*.field-birth {
     order:-1;
     height: 33.33% !important;
     flex-basis: auto !important;
     margin: auto;
 }*/
+
 #mc-embedded-subscribe-form .button {
     order: 99;
     flex-basis: 100%;
@@ -356,15 +365,11 @@ li {
 }
 
 #mc-embedded-subscribe-form .button:hover {
-    background-color: rgba(241, 90, 36, 0.65);    
+    background-color: rgba(241, 90, 36, 0.65);   
 }
-
 #mc-embedded-subscribe-form .clear {
     margin-left: auto;
     margin-right: auto;
-}
-
-#mc-embed_signup .button {
 }
 @media (max-width: 767px) {
     .field-first {
@@ -387,14 +392,17 @@ li {
     max-width: 600px;
     margin: 10px auto 20px auto;
 }
+
 .asterisk{
     color: var(--red)!important; 
 }
+
 .mc-field-group {
     background-color: none !important;
     padding: 10px;
     border: 1px solid var(--white)off;
 }
+
 .mc-field-group label {
     font-family: 'open sans', sans-serif;
     background-color: none;
@@ -403,6 +411,7 @@ li {
     border-bottom: 0px solid var(--red);
     margin-bottom: 0px;
 }
+
 .mc-field-group input {
     background-color: rgba(255,255,255,0.2) !important;
     color: white;
@@ -416,7 +425,6 @@ li {
 }
 
 /* CONTENT WRAPPER */
-
 .wrapper {
   display: flex;
   width: 100%;
@@ -443,6 +451,9 @@ li {
   border: solid 4px var(--black);
 }
 
+.white-border {
+    border: solid 4px var(--white);
+}
 @media (max-width: 768px) {
   .content {
     width: 80%;
@@ -451,15 +462,8 @@ li {
   }
 }
 
-
-/* @media (max-width: 767px) {
-    .wrapper {
-        flex-direction: column;
-        justify-content: center;
-    }
-} */
-
 /* BUTTONS    */
+
 .button-container {
   display: flex;
   flex-wrap: wrap;
@@ -469,7 +473,6 @@ li {
   justify-content: center;
   width: 100%;
 }
-
 @media (max-width: 767px) {
   .button-containter {
     flex-direction: column;
@@ -528,6 +531,7 @@ li {
 }
 
 /*VIDEO*/
+
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -596,18 +600,20 @@ li {
     height: 50vh;
     border: 1px solid var(--red);
     background: linear-gradient(
-    rgba(255, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.9),
     rgba(0, 0, 0, 0.45)
      ),
-    url(images/baptism.jpg)off;
-    background: url(baptism.jpg) bottom center no-repeat var(--black);
+    url(images/hunt_TX.jpg) center center no-repeat var(--black);
+    background-size: cover;
 }
 
 .bghunt .content {
     max-height: 300px;
+    
 }
 
 /*PROFILES*/
+
 .profile-container {
   display: flex;
   flex-flow: row;
@@ -617,13 +623,6 @@ li {
   flex-wrap: wrap;
 }
 
-/*.da-trainers {
-    order: 1;
-    flex-grow: 1;
-    width: 100%;
-    margin: auto;
-}*/
-
 .profile {
   order: 1;
   width: 33%;
@@ -631,13 +630,11 @@ li {
   align-self: auto;
   border: solid0 var(--red);
 }
-
 @media (min-width: 768px) {
   .profile {
     min-width: 300px;
   }
 }
-
 @media (max-width: 767px) {
   .profile-containter {
     flex-flow: column;
