@@ -196,16 +196,34 @@ li {
   overflow: hidden;
 }
 
-.buffer {
+/*.buffer {
+    
     box-sizing: border-box;
+    background-color: none;
     width: 100%;
     height: 80px;
-    border: 4px solid var(--red)off;
     margin: 0px;
     padding: 0px;
     
+}*/
+
+.buffer {
+    position: relative;
+    border-top: 52px solid transparent;
+    margin: -70px 0 0;
+   -webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;
 }
 
+.buffer:before {
+   content: "";
+   position: absolute;
+   top: -2px;
+   left: 0;
+   right: 0;
+   border-top: 2px solid transparent;
+}
 
 /*HERO*/
 #logo {
@@ -430,7 +448,16 @@ li {
     margin: 0px !important;
 }
 
-/*COHORT OVERVIEW*/
+
+/*VIDEO*/
+
+#h1video {
+    margin: 0px;
+}
+
+.h1video{
+    margin: 0;
+}
 
 .responsive-video {
     overflow: hidden;
@@ -447,6 +474,7 @@ li {
     position: absolute;
 }
 
+/*COHORT OVERVIEW*/
 .overview-wrap {
     display: flex;
     background: linear-gradient(
