@@ -229,7 +229,7 @@ li {
       url(http://jackasstheology.com/wp-content/uploads/2019/06/baptism.jpg)  center no-repeat fixed;  
     background-size: cover;  
 } 
-@media (max-width:767px){
+@media (max-width: 850px){
     #logo {
     background: linear-gradient(
     rgba(255, 255, 255, .65),
