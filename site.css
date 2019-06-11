@@ -199,8 +199,8 @@ li {
 
 .buffer {
     position: relative;
-    border-top: 52px solid transparent;
-    margin: -60px 0 0;
+    border-top: 80px solid transparent;
+    margin: -80px 0 0;
    -webkit-background-clip: padding-box;
    -moz-background-clip: padding;
    background-clip: padding-box;
@@ -754,7 +754,40 @@ li {
   border: 4px solid var(--black);
 }
 
+/*Testimonial*/
+
+.image {
+    flex-basis: 100%;
+    background: url(images/cohort_1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: 0px;
+}
+
 .testimonials {
   font-style: italic;
   font-weight: 300;
+}
+
+/*Footer*/
+
+.wrapper-footer {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer {
+    font-family: var(--pfont);
+    background-color: var(--black);
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 12px;
+    padding:20px;
+    color: var(--white);
+    flex-basis: 100%;
 }
