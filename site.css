@@ -212,15 +212,20 @@ li {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  height: 90vh;
+  height: 100vh;
   background: linear-gradient(
     rgba(255, 255, 255, .65),
     rgba(0, 0, 0, 0.45)
      ),
       url(http://jackasstheology.com/wp-content/uploads/2019/06/baptism.jpg)  center no-repeat fixed;  
-    background-size: cover;
-    
+    background-size: cover;  
 } 
+@media (max-width:767px){
+    #logo {
+        height: 100vh;
+    }
+    
+}
 
 #logo img {
     width: 100%;
@@ -363,7 +368,7 @@ li {
 .join-list {
     display: flex;
     flex-basis: 100%;
-    border: 1px solid var(--red);
+    border: 1px solid var(--red)off;
 }
 #mc-embedded-subscribe-form .button:hover {
     background-color: rgba(241, 90, 36, 0.65);   
@@ -427,6 +432,22 @@ li {
 }
 
 /*COHORT OVERVIEW*/
+
+.responsive-video {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    border: 4px solid var(--red);
+}
+
+.responsive-video iframe{
+    left:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 .overview-wrap {
     display: flex;
