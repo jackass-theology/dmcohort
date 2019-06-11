@@ -336,6 +336,7 @@ li {
     order: -2;
     height: 100px;
     flex-basis: 45%;
+    margin-right: 15px;
 }
 
 .field-last {
@@ -344,9 +345,6 @@ li {
     flex-basis: 45%;
 }
 
-#mc-embedded-subscribe {
-    flex-basis: 100%;
-}
 
 #mc-embedded-subscribe-form .button {
     flex-basis: 100%;
@@ -354,16 +352,19 @@ li {
     background-color: rgba(90, 158, 160, 0.75);    
     font-family: 'open sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 0px;
     border: 2px solid var(--white)off;
-    padding: 15px 40px 15px 40px;
-    width: 300px;
+    padding: 20px 30px 20px 30px;
     text-align: center;
-    margin-top: 30px;
-    height: auto;
+    margin: 30px 70px;
+    box-sizing: border-box;
 }
-
+.join-list {
+    display: flex;
+    flex-basis: 100%;
+    border: 1px solid var(--red);
+}
 #mc-embedded-subscribe-form .button:hover {
     background-color: rgba(241, 90, 36, 0.65);   
 }
@@ -419,7 +420,7 @@ li {
     width: 100%;
     font-family: 'open sans', sans-serif;
     font-size: 18px !important;
-    padding: 10px 0px 10px 0px !important;
+    padding: 15px 0px 15px 10px !important;
     border-radius: 0px !important;
     border: 2px solid var(--white)off;
     margin: 0px !important;
