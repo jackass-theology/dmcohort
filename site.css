@@ -235,7 +235,7 @@ li {
     rgba(255, 255, 255, .65),
     rgba(0, 0, 0, 0.45)
      ),
-      url(http://jackasstheology.com/wp-content/uploads/2019/06/baptism.jpg)  center no-repeat fixed;  
+      url(http://jackasstheology.com/wp-content/uploads/2019/06/baptism.jpg)  center no-repeat;  
     background-size: cover; 
     }
     
