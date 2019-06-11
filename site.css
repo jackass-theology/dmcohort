@@ -368,7 +368,6 @@ li {
 .join-list {
     display: flex;
     flex-basis: 100%;
-    border: 1px solid var(--red)off;
 }
 #mc-embedded-subscribe-form .button:hover {
     background-color: rgba(241, 90, 36, 0.65);   
@@ -438,7 +437,6 @@ li {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
-    border: 4px solid var(--red);
 }
 
 .responsive-video iframe{
