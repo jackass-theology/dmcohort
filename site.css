@@ -476,9 +476,6 @@ li {
     align-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 750px;
-    min-height: 700px;
-    max-height: 2000px;
     overflow: visible;
     background: linear-gradient(
         rgba(0, 0, 0, 1),
@@ -486,11 +483,12 @@ li {
         ),
         url(http://jackasstheology.com/wp-content/uploads/2019/06/cohort_1.jpg) center no-repeat var(--black);
     background-size: cover;
+    height: 800px;
 }
 @media (max-width: 767px) {
     #dmcohort-mailchimp  {
-    min-height: 900px;
-    overflow: visible;
+    overflow: hidden;
+    height: 900px;
     }
 }
 
@@ -553,12 +551,11 @@ li {
     display: flex;
     width: 100%;
     max-width: 600px;
-    height: 400px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;
+    align-content: center;
     margin-bottom: 100px;
     margin-top: 0px;
 }
@@ -567,19 +564,23 @@ li {
     order: -3;
     height: 100px;
     flex-basis: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
 }
 
 .field-first {
     order: -2;
     height: 100px;
-    flex-basis: 45%;
+    flex-basis: 200px;
     margin-right: 15px;
+    margin-left: 20px;
+
 }
 
 .field-last {
     order: -1;
     height: 100px;
-    flex-basis: 45%;
+    flex-basis: 280px;
 }
 
 
@@ -619,16 +620,27 @@ li {
     flex-basis: 100% !important;
     margin-left: auto;
     }
+    .field-email {
+    order: -3;
+    flex-basis: 100% !important;
+    margin-left: auto;
+    margin-right: 0px;
+    }
     #mc-embedded-subscribe-form .button{
         margin-top: 30px;
         flex-basis: 100%;
     }
+    .field-container {
+        max-width: 400px;
+    }
+    .indicates-required {
+        max-width: 400px;
+    }
 }
 
 .indicates-required{
-    width: 80%;
-    max-width: 600px;
-    margin: 10px auto 20px auto;
+    width: 550px;
+    margin: 10px 0px 20px 0px;
 }
 
 .asterisk{
@@ -716,6 +728,10 @@ li {
     line-height: 2.5em;
     max-width: 500px;
     margin: 0px;
+}
+
+.last-ul {
+    margin-bottom: 50px;
 }
 
 /* CONTENT WRAPPER */
