@@ -631,10 +631,10 @@ li {
         flex-basis: 100%;
     }
     .field-container {
-        max-width: 400px;
+        max-width: 350px;
     }
     .indicates-required {
-        max-width: 400px;
+        max-width: 350px;
     }
 }
 
