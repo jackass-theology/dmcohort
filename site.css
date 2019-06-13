@@ -597,6 +597,7 @@ li {
     text-align: center;
     margin: 30px 70px;
     box-sizing: border-box;
+    -webkit-appearance: none;
 }
 .join-list {
     display: flex;
